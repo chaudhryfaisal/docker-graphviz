@@ -1,6 +1,9 @@
 FROM alpine:3.7
-MAINTAINER Fabio Rehm "fgrehm@gmail.com"
+
+MAINTAINER Oleg Zaytsev <oleg@zaytsev.es>
+
 WORKDIR /graphviz
+
 RUN apk add --update --no-cache \
-           graphviz \
+           graphviz=2.40.1-r0 \
            ttf-freefont
